@@ -1,6 +1,6 @@
 import random
 
-def carga_lista(n:int):
+def cargar_lista(n:int):
     '''Carga una lista de N números aleatorios del 1 al 100.
     Pre: cargar un número entero N que será la cantidad de números de la lista.
     Pos: devuelve la lista con números del 1 al 100 (enteros)
@@ -8,7 +8,7 @@ def carga_lista(n:int):
     lista=[random.randint(1,100) for _ in range(n)]
     return lista
 
-def comprueba_repetido(lista):
+def comprobar_repetido(lista):
     '''Recibe una lista y devuelve True si tiene algún elemento repetido.
     Pre: informar una lista.
     Pos: devuelve True si tiene algún elemento repetido.
@@ -17,7 +17,7 @@ def comprueba_repetido(lista):
         if lista.count(elem) > 1:
             return True
 
-def devuelve_unicos(lista):
+def devolver_unicos(lista):
     '''Recibe una lista y devuelve una nueva lista con los elementos que no se repiten.
     Pre: informar una lista.
     Pos: devuelve una lista nueva que solamente incluye los elementos no repetidos.
@@ -30,8 +30,8 @@ def devuelve_unicos(lista):
 
 
 N = int(input("Ingrese la cantidad de números que desea para la lista: "))
-lista1 = carga_lista(N)
+lista1 = cargar_lista(N)
 print(lista1)
-print(comprueba_repetido(lista1))
-print(devuelve_unicos(lista1))
+print(comprobar_repetido(lista1))
+print(devolver_unicos(lista1))
        
