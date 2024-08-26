@@ -1,4 +1,8 @@
-def max_estricto(n1, n2, n3):
+def calcular_max_estricto(n1, n2, n3):
+    '''Devuelve el número máximo de los ingresado siempre que sea único.
+    Pre: deben ingresarse números enteros positivos.
+    Pos: devuelve el máximo siempre que sea único. De lo contrario, emite una sentencia informativa.
+    '''
     if n1 < n2:
         if n2 < n3:
             nummax = n3
@@ -22,9 +26,9 @@ num1 = int(input("Ingrese un numero entero positivo: "))
 num2 = int(input("Ingrese un numero entero positivo: "))
 num3 = int(input("Ingrese un numero entero positivo: "))
 
-NUMMAXIMO = max_estricto(num1,num2,num3)
+num_maximo = calcular_max_estricto(num1,num2,num3)
 
-if NUMMAXIMO == -1:
+if num_maximo == -1:
     print ("No existe un maximo estricto")
 else:
-    print ("El numero maximo es: ", NUMMAXIMO)
+    print ("El numero maximo es: ", num_maximo)

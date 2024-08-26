@@ -45,34 +45,34 @@ def dia_siguiente(dia, mes, anio):
 
 # Programa para sumar n días a la fecha
 
-DIA = int(input("Ingrese un dia: "))
-MES = int(input("Ingrese un mes: "))
-ANIO = int(input("Ingrese un año: "))
+input_dia = int(input("Ingrese un dia: "))
+input_mes = int(input("Ingrese un mes: "))
+input_anio = int(input("Ingrese un año: "))
 
-cantDiasSuma = int(input("Ingrese la cantidad de días a sumar: "))
-for i in range (cantDiasSuma):
-    diaSiguiente = dia_siguiente(DIA,MES,ANIO)
-    DIA = diaSiguiente[0]
-    MES = diaSiguiente[1]
-    ANIO = diaSiguiente[2]
+cant_dias_suma = int(input("Ingrese la cantidad de días a sumar: "))
+for i in range (cant_dias_suma):
+    nuevo_dia = dia_siguiente(input_dia,input_mes,input_anio)
+    input_dia = nuevo_dia[0]
+    input_mes = nuevo_dia[1]
+    input_anio = nuevo_dia[2]
 
-print("La fecha resultante es: ", diaSiguiente[0], "/", diaSiguiente[1], "/", diaSiguiente[2])
+print(f"La fecha resultante es: {nuevo_dia[0]} / {nuevo_dia[1]} / {nuevo_dia[2]}")
 
 # Programa para calcular la cantidad de días existentes entre dos fechas / Se usará año comercial de 360 días y meses de 30 días
 
-DIA1 = int(input("Ingrese un dia: "))
-MES1 = int(input("Ingrese un mes: "))
-ANIO1 = int(input("Ingrese un año: "))
+inp_dia1 = int(input("Ingrese un dia: "))
+input_mes1 = int(input("Ingrese un mes: "))
+input_anio1 = int(input("Ingrese un año: "))
 
-DIA2 = int(input("Ingrese otro dia: "))
-MES2 = int(input("Ingrese otro mes: "))
-ANIO2 = int(input("Ingrese otro año: "))
+input_dia2 = int(input("Ingrese otro dia: "))
+input_mes2 = int(input("Ingrese otro mes: "))
+input_anio2 = int(input("Ingrese otro año: "))
 
-fecha1 = dia_siguiente(DIA1, MES1, ANIO1)
-fecha2 = dia_siguiente(DIA2, MES2, ANIO2)
+fecha1 = dia_siguiente(inp_dia1,input_mes1,input_anio1)
+fecha2 = dia_siguiente(input_dia2,input_mes2,input_anio2)
 
-diferenciaAnios = (fecha1[2] - fecha2[2]) * 360
-diferenciaMeses = (fecha1[1] - fecha2[1]) * 30
-diferenciaDias = fecha1[0] - fecha2[0]
+diferencia_anios = (fecha1[2] - fecha2[2]) * 360
+diferencia_meses = (fecha1[1] - fecha2[1]) * 30
+diferencia_dias = fecha1[0] - fecha2[0]
 
-print("La cantidad de días transcurridos entre las dos fechas es ", diferenciaAnios + diferenciaMeses + diferenciaDias)
+print(f"La cantidad de días transcurridos entre las dos fechas es {diferencia_anios + diferencia_meses + diferencia_dias}")

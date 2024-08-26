@@ -1,3 +1,8 @@
+'''El siguiente programa devuelve el vuelto dividido por denominación de billetes.
+Pre: deben ingresarse dos números enteros: total de la compra y total del dinero recibido.
+Pos: devuelve la cantidad de billetes de cada denominación a devolver. Si el dinero es insuficiente muestra un mensaje alusivo.
+'''
+
 totalCompra = int(input("Ingrese el total de la compra: "))
 totalDinero = int(input("Ingrese el dinero recibido: "))
 
