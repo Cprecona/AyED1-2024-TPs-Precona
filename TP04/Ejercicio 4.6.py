@@ -36,8 +36,8 @@ def extraer_iterando_(cadena: str,pos: int, cant: int) -> str:
 # Extracción subcadena utilizando rebanadas
 
 cadena_original = "El número de teléfono es 4356-7890"
-subcadena = extraer_subcadena_rebanadas(cadena_original,25,9)
-print(subcadena)
+subcadena_1 = extraer_subcadena_rebanadas(cadena_original,25,9)
+print(subcadena_1)
 
 # Extracción subcadena sin utilizar rebanadas
 

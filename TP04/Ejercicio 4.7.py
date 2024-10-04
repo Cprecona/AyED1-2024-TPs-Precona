@@ -36,8 +36,8 @@ def eliminar_iterando(cadena: str,pos: int, cant: int) -> str:
 # Eliminación subcadena utilizando rebanadas
 
 cadena_original = "El número de teléfono es 4356-7890 y ya lo agendé"
-subcadena = eliminar_subcadena_rebanadas(cadena_original,25,9)
-print(subcadena)
+subcadena_1 = eliminar_subcadena_rebanadas(cadena_original,25,9)
+print(subcadena_1)
 
 # Eliminación subcadena sin utilizar rebanadas
 
