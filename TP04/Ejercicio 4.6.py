@@ -29,7 +29,7 @@ def extraer_iterando_(cadena: str,pos: int, cant: int) -> str:
             if posicion >= posicion_inicio:
                 subcadena_iterando += caracter
 
-    return subcadena
+    return subcadena_iterando
 
 # PROGRAMA
 

@@ -28,7 +28,7 @@ def eliminar_iterando(cadena: str,pos: int, cant: int) -> str:
         if posicion <= posicion_inicio or posicion >= posicion_inicio+cant:
             subcadena_iterando += caracter
 
-    return subcadena
+    return subcadena_iterando
 
 
 # PROGRAMA
