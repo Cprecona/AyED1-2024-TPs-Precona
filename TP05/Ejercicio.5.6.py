@@ -31,12 +31,17 @@ def visualizar_posicion_numeros(lista_num: List) -> None:
 
     Post: los números cuya posición se consulta deben estar dentro de la lista.
     '''
+    intentos_fallidos = 0
     while True:
         try:
             numero_a_buscar = int(input("Ingrese el número cuya posición en la lista quiere saber: "))
             posicion = lista_num.index(numero_a_buscar)
         except ValueError:
+            intentos_fallidos += 1
             print("El número no está en la lista")
+            if intentos_fallidos >= 3:
+                print("Demasiados errores, saliendo del sistema...")
+                break
         else:
             print(f"La posición del número {numero_a_buscar} es la N° {posicion+1}")
             break
