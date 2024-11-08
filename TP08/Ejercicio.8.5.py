@@ -32,7 +32,7 @@ def main() -> None:
     Post: imprime el resultado.
     """
     try:
-        resultado = verificar_ortogonal((2, 3), (-3, 2))
+        resultado = verificar_ortogonal((2, -3), (-2, 3))
     except NameError:
         print("Datos inválidos")
     else:
