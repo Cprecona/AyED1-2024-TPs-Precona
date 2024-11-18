@@ -1,6 +1,3 @@
-from typing import TextIO
-
-
 def grabar_rango_alturas() -> None:
     """Graba en un archivo las alturas de los atletas de distintas
     disciplinas, los que se ingresan desde el teclado. Cada dato se debe grabar en una
@@ -21,7 +18,7 @@ def grabar_rango_alturas() -> None:
         with open("alturas.txt", "wt", encoding="utf-8") as archivo_alturas:
             while True:
                 nombre_deporte = input("Ingrese el nombre del deporte: ")
-                archivo_alturas.write(nombre_deporte + "\n")
+                archivo_alturas.write(f"{nombre_deporte}\n")
                 while True:
                     try:
                         altura = input(
@@ -34,7 +31,7 @@ def grabar_rango_alturas() -> None:
                         altura = float(altura)
                         if altura < -3 or altura > 200:
                             raise ValueError("Ingrese un valor correcto de altura")
-                        archivo_alturas.write(altura + "\n")
+                        archivo_alturas.write(f"{altura}\n")
                     except ValueError as msg:
                         print(msg)
     except FileNotFoundError as msg:
@@ -128,8 +125,16 @@ def mostrar_mas_altos() -> None:
         print(f"Archivo no encontrado: {msg}")
     except:
         print("Error en los datos")
-    else:
-        print("\nArchivo generado exitosamente")
 
 
-mostrar_mas_altos()
+def main() -> None:
+    """Este es el programa principal. Llama a las funciones
+    previamente creadas.
+    """
+    grabar_rango_alturas()
+    grabar_promedio()
+    mostrar_mas_altos()
+
+
+if __name__ == "__main__":
+    main()
