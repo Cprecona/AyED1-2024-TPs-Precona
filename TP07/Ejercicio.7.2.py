@@ -20,7 +20,8 @@ def convertir_a_decimal(num: int, potencia: int, resultado: int) -> int:
 
 def main() -> None:
     """Este es el programa principal. Solamente llama a la funcion
-    contar_digitos y le pasa el número como parámetro.
+    convertir_a_decimal y le pasa el número, la potencia y el resultado
+    como parámetros.
 
     """
     numero_convertido = convertir_a_decimal(10101100, 0, 0)
