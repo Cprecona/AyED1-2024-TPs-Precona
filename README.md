@@ -5,3 +5,5 @@
 Hice todos, aunque algunos no funcionaron, como el ejercicio 4.11, o las matrices espirales.
 Seguramente todos son mejorables.
 Me falta el TP07, para hacer antes del final.
+
+Actualización 30/11: terminado TP07, con algunos comentarios en ejercicios.
